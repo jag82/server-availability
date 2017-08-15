@@ -1,0 +1,16 @@
+{
+	"targets": [
+		{
+			"address": "jag.tools",
+			"port": 80,
+			"attempts": 10,
+			"timeout": 5000
+		},
+		{
+			"address": "google.de",
+			"port": 80,
+			"attempts": 10,
+			"timeout": 5000
+		}
+	]	
+}

@@ -1,0 +1,20 @@
+{
+  "name": "server-availability",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tape app/main.js | tap-notify | faucet || true",
+    "start2": "node app/main.js",
+    "test": "tape tests/**/*.js | tap-notify | faucet || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faucet": "0.0.1",
+    "tap-notify": "^1.0.0",
+    "tape": "^4.8.0",
+    "tape-catch": "^1.0.6",
+    "tcp-ping": "^0.1.1"
+  }
+}
